@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatInputModule } from '@angular/material/input';
+
 import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
@@ -7,7 +9,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     SearchBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatInputModule
   ],
   exports: [
     SearchBarComponent
