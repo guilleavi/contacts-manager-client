@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
+import { ContactsSearchComponent } from './contacts-search/contacts-search.component';
 
 const routes: Routes = [
-  // { path: '', component: ContactsComponent }
+  { path: '', component: ContactsSearchComponent }
 ];
 
 @NgModule({
