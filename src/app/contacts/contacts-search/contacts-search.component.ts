@@ -12,4 +12,8 @@ export class ContactsSearchComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchContacts(term: string): void {
+    console.log('term', term);
+  }
+
 }

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatInputModule } from '@angular/material/input';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { SearchBarComponent } from './search-bar/search-bar.component';
 
@@ -10,9 +10,11 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
   ],
   imports: [
     CommonModule,
-    MatInputModule
+    FontAwesomeModule,
   ],
   exports: [
+    CommonModule,
+    FontAwesomeModule,
     SearchBarComponent
   ]
 })

@@ -2,4 +2,18 @@
 
 .search-bar {
   background-color: $lightblue-100;
+  padding: 15px;
+  .input-group-prepend {
+    margin-right: -12px;
+    .input-group-text {
+      background-color: white;
+      border: none;
+    }
+  }
+  input.form-control {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
