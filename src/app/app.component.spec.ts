@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'contacts-manager'`, () => {
+  it(`should have as title 'contacts-manager-client'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('contacts-manager');
+    expect(app.title).toEqual('contacts-manager-client');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('contacts-manager app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('contacts-manager-client app is running!');
   });
 });
