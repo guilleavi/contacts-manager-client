@@ -1,0 +1,55 @@
+ul.letters-list {
+  list-style: none;
+  padding-left: 0;
+  li {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 2em;
+    justify-content: center;
+    width: 2.5em;
+  }
+  li:nth-child(odd) {
+    background-color: #aec2f250;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  ul.letters-list {
+    font-size: 0.7em;
+    color: red;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  ul.letters-list {
+    font-size: 0.9em;
+    color: blue;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  ul.letters-list {
+    font-size: 1em;
+    color: green;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  ul.letters-list {
+    font-size: 1.2em;
+    color: yellow;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  ul.letters-list {
+    font-size: 1.3em;
+    color: black;
+  }
+}

@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { DirectoryComponent } from './directory/directory.component';
 
 @NgModule({
   declarations: [
-    SearchBarComponent
+    SearchBarComponent,
+    DirectoryComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
   exports: [
     CommonModule,
     FontAwesomeModule,
-    SearchBarComponent
+    SearchBarComponent,
+    DirectoryComponent
   ]
 })
 export class SharedModule { }

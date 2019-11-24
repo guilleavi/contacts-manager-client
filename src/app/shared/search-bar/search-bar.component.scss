@@ -2,9 +2,10 @@
 
 .search-bar {
   background-color: $lightblue-100;
-  padding: 15px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   .input-group-prepend {
-    margin-right: -12px;
+    margin-right: -0.7em;
     .input-group-text {
       background-color: white;
       border: none;
