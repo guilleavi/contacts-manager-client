@@ -1,0 +1,31 @@
+<header id="app-header"
+        class="row fixed-top align-items-center">
+
+  <div id="header-left-action"
+       class="col-3">
+    <fa-icon class="px-3 d-inline-block align-middle"
+             *ngIf="leftActionIcon"
+             [size]="'2x'"
+             [icon]="leftActionIcon"></fa-icon>
+    <span class="d-none d-md-inline-block align-middle"
+          *ngIf="leftActionText">{{leftActionText}}</span>
+  </div>
+
+  <div id="header-title"
+       class="col-6 text-center">
+    <h3 class="mb-0 d-md-none d-xs-block font-weight-normal">{{shortTitle}}</h3>
+    <h3 class="mb-0 d-none d-md-block">{{longTitle}}</h3>
+  </div>
+
+  <div id="header-right-action"
+       class="col-3 ">
+    <div class="float-right">
+      <span class="d-none d-md-inline-block align-middle text-right"
+            *ngIf="rightActionText">{{rightActionText}}</span>
+      <fa-icon class="px-3 d-inline-block align-middle text-right"
+               *ngIf="rightActionIcon"
+               [size]="'2x'"
+               [icon]="rightActionIcon"></fa-icon>
+    </div>
+  </div>
+</header>

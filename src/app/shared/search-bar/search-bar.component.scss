@@ -1,20 +1,11 @@
 @import '../../../styles/variables';
 
 .search-bar {
-  background-color: $lightblue-100;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  .input-group-prepend {
-    margin-right: -0.7em;
-    .input-group-text {
-      background-color: white;
-      border: none;
-    }
+  fa-icon {
+    color: $primary-color;
   }
-  input.form-control {
-    border: none;
-    &:focus {
-      box-shadow: none;
-    }
+  input {
+    color: $primary-color;
+    font-size: 1rem;
   }
 }

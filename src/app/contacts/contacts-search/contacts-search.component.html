@@ -1,13 +1,68 @@
-<!--<div class="d-flex flex-row">-->
+<app-header [shortTitle]="'Contacts'"
+            [longTitle]="'Contact Manager'"
+            [leftActionIcon]="faReply"
+            [rightActionIcon]="faPlus"
+            [leftActionText]="'Home'"
+            [rightActionText]="'Add Contact'"></app-header>
+<div id="contacts-body"
+     class="row">
+  <div class="col-md-4 col-12">
+    <app-search-bar></app-search-bar>
+  </div>
+</div>
+<app-footer></app-footer>
+<!--<div id="app-body">-->
 <!--  <div class="col-12">-->
-    <app-search-bar (searchTerm)="searchContacts($event)"></app-search-bar>
+<!--    <div id="contacts-search-bar"-->
+<!--         class="row">-->
+<!--      <mat-form-field class="search-bar w-100">-->
+<!--        <input matInput-->
+<!--               placeholder="Search">-->
+<!--      </mat-form-field>-->
+<!--    </div>-->
+<!--    <div id="contacts-body"-->
+<!--         class="row d-none">-->
+<!--      <ul id="contacts-list">-->
+<!--        <li class="contact-item">-->
+<!--          John Lennon-->
+<!--        </li>-->
+<!--        <li class="contact-item">-->
+<!--          John Lennon-->
+<!--        </li>-->
+<!--        <li class="contact-item">-->
+<!--          John Lennon-->
+<!--        </li>-->
+<!--        <li class="contact-item">-->
+<!--          John Lennon-->
+<!--        </li>-->
+<!--        <li class="contact-item">-->
+<!--          John Lennon-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <ul id="directory-bar">-->
+<!--        <li class="directory-letter">-->
+<!--          A-->
+<!--        </li>-->
+<!--        <li class="directory-letter">-->
+<!--          B-->
+<!--        </li>-->
+<!--        <li class="directory-letter">-->
+<!--          C-->
+<!--        </li>-->
+<!--        <li class="directory-letter">-->
+<!--          D-->
+<!--        </li>-->
+<!--        <li class="directory-letter">-->
+<!--          E-->
+<!--        </li>-->
+<!--        <li class="directory-letter">-->
+<!--          F-->
+<!--        </li>-->
+<!--        <li class="directory-letter">-->
+<!--          G-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
-<!--<div class="d-flex flex-row">-->
-<!--  <div class="contacts" style="background-color: pink;">-->
-<!--    Contact List 123123 123 15421534  453453 4543123 54534 3454 4684 3123 53453 1215 fdgdgfdg-->
-<!--  </div>-->
-<!--  <div class="ml-auto directory" style="background-color: yellow">-->
-<!--    <app-directory></app-directory>-->
-<!--  </div>-->
-<!--</div>-->
+

@@ -1,15 +1,10 @@
-<div class="xrow search-bar">
-<!--  <div class="col-12">-->
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <div class="input-group-text">
-          <fa-icon [icon]="faSearch"></fa-icon>
-        </div>
-      </div>
-      <input type="text"
-             class="form-control"
-             placeholder="Search"
-             (keyup.enter)="onEnter($event.target.value)">
-    </div>
-<!--  </div>-->
-</div>
+<mat-form-field class="search-bar w-100 mt-3">
+  <span matPrefix class="pr-2">
+    <fa-icon [size]="'md'"
+             [icon]="faSearch">
+    </fa-icon>
+  </span>
+  <input matInput
+         placeholder="Search"
+         (keyup.enter)="onEnter($event.target.value)">
+</mat-form-field>

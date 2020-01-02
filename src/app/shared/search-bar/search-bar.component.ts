@@ -13,8 +13,6 @@ export class SearchBarComponent implements OnInit {
 
   faSearch = faSearch;
 
-  constructor() { }
-
   ngOnInit() {
   }
 
